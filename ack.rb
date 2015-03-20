@@ -16,7 +16,7 @@ def main ()
             puts "The ack of #{i} and #{j} is #{ans}"
             i += 1
             j += 1
-            if (i >= 3 && j >= 3) then # Recursion limit
+            if (i >= 3 and j >= 3) then # Recursion limit
                 break
             end
         end
