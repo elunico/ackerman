@@ -15,7 +15,7 @@ function main()
             ans = ack(i, j)
             io.write("The value of " .. i .. " and " .. j .. " is " .. ans .. "\n")
             if (i == 4 and j == 0) then
-                break
+                break -- Lua stack limit
             end
         end
         if (i == 4) then

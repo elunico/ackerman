@@ -10,7 +10,7 @@ ack = function(m, n) {
 main = function() {
     for (var i = 0; i < 5; i++) {
         for (var j=0; j < 5; j++) {
-            if (i === 4 && j === 1) break; // Node recursion limit
+            if (i === 4 && j === 1) break; // Node stack limit
             var answer = ack(i, j);
             var sentence = "The ack of " + i + " and " + j + " is " + answer;
             console.log(sentence);

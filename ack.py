@@ -10,7 +10,7 @@ def ack(m, n):
 def main ():
     for i in range(5):
         for j in range(5):
-            if i == 4 and j == 1: # Recursion limit
+            if i == 4 and j == 1: # Python Stack limit
                 break
             ans = ack(i, j)
             print("The ack of %i and %i is %i" % (i, j, ans))

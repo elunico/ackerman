@@ -13,7 +13,7 @@ int main (int argc, char const *argv[])
     acks = fopen("/Users/thomas/Desktop/ackermans.txt", "a");
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
-            if (i == 4 && j == 2) break;
+            if (i == 4 && j == 2) break; // Stack Limit for C
             int ans = ack(i, j);
             fprintf(acks, "The ack of %i ", i); fprintf(acks, "and %i ", j); fprintf(acks, "is %i\n", ans);
         }

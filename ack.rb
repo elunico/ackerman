@@ -16,7 +16,7 @@ def main ()
             ans = ack(i, j)
             puts "The ack of #{i} and #{j} is #{ans}"
             j += 1
-            if i == 4 and j > 0 then # Recursion limit
+            if i == 4 and j > 0 then # Ruby stack limit
                 break
             end
         end

@@ -11,7 +11,7 @@ func main() {
             var ans: Int = ack(i, j)
             println("The ack of \(i) and \(j) is \(ans)")
             if i == 4 && j == 1 {
-                break
+                break // Stack limit for Swift
             }
         }
     }

@@ -14,7 +14,7 @@ main = ->
     j = 0
     while j < 5
       if i == 4 and j == 1
-        break # Node recursion limit
+        break # Node stack limit
       answer = ack(i, j)
       sentence = 'The ack of ' + i + ' and ' + j + ' is ' + answer
       console.log sentence
