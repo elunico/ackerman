@@ -11,15 +11,16 @@ end
 def main ()
     i = j = 0
     while i < 5 do
+        j = 0
         while j < 5 do
             ans = ack(i, j)
             puts "The ack of #{i} and #{j} is #{ans}"
-            i += 1
             j += 1
-            if (i >= 3 and j >= 3) then # Recursion limit
+            if i == 4 and j > 0 then # Recursion limit
                 break
             end
         end
+        i += 1
     end
 end
 
