@@ -9,13 +9,13 @@ int ack(int m, int n) {
 
 int main (int argc, char const *argv[])
 {
-    FILE *acks;
-    acks = fopen("/Users/thomas/Desktop/ackermans.txt", "a");
+    FILE *fi;
+    fi = fopen("/Users/thomaspovinelli/Desktop/acks.txt", "w");
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
-            if (i == 4 && j == 2) break; // Stack Limit for C
+            if (i == 4 && j == 2) break; // C stack limit
             int ans = ack(i, j);
-            fprintf(acks, "The ack of %i ", i); fprintf(acks, "and %i ", j); fprintf(acks, "is %i\n", ans);
+            fprintf(fi, "The ack of %i and %i is %i\n", i, j, ans);
         }
     }
     return 0;
