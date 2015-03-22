@@ -18,5 +18,6 @@ int main (int argc, char const *argv[])
             fprintf(fi, "The ack of %i and %i is %i\n", i, j, ans);
         }
     }
+    fclose(fi);
     return 0;
 }
